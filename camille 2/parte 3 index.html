@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Academia Jiu-Jitsu Young</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Young Jiu-Jitsu</h1>
+        <p>Força, disciplina e evolução pessoal através do Jiu-Jitsu</p>
+      </header>
+
+      <nav>
+      <a href="indez.html parte 1.html" target="_blank">Benefícios</a>
+      <a href="parte 2 index.html" target="_blank">Horários</a>
+      <a href="parte 3 index.html" target="_blank">Cadastro</a>
+    </nav>
+
+
+  <form>
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="sobrenome">Sobrenome:</label>
+      <input type="text" id="sobrenome" name="sobrenome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" name="sexo" required>
+        <option value="">Selecione</option>
+        <option value="feminino">Feminino</option>
+        <option value="masculino">Masculino</option>
+      </select>
+
+      <label for="celular">Celular:</label>
+      <input type="tel" id="celular" name="celular" placeholder="(00) 00000-0000" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações de Treinamento</legend>
+
+      <label for="turno">Turno Desejado:</label>
+      <select id="turno" name="turno" required>
+        <option value="">Selecione</option>
+        <option value="manha">Manhã</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>
+      </select>
+
+      <label for="dia">Dia Desejado:</label>
+      <select id="dia" name="dia" required>
+        <optgroup label="Dias da Semana">
+          <option value="segunda">Segunda-feira</option>
+          <option value="quarta">Quarta-feira</option>
+          <option value="sexta">Sexta-feira</option>
+        </optgroup>
+      </select>
+
+      <label for="nivel">Nível Desejado:</label>
+      <select id="nivel" name="nivel" required>
+        <option value="">Selecione</option>
+        <optgroup label="Níveis de Treino">
+          <option value="iniciante">Iniciante / Intermediário</option>
+          <option value="todos">Todos os níveis</option>
+          <option value="avancado">Intermediário / Avançado</option>
+        </optgroup>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Feedback ou Dúvidas</legend>
+      <label for="feedback">Escreva aqui:</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="Deixe seu comentário ou dúvida..."></textarea>
+    </fieldset>
+
+    <button type="submit">Enviar Cadastro</button>
+
+    <output id="mensagem">Preencha o formulário e clique em Enviar.</output>
+  </form>
+
+   <footer>
+        <p>&copy; 2025 Young Jiu-Jitsu - Todos os direitos reservados.</p>
+      </footer>
+</body>
+</html>
